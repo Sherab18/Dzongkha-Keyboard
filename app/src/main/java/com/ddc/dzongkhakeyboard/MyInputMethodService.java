@@ -34,9 +34,10 @@ public class MyInputMethodService extends InputMethodService implements Keyboard
     private Keyboard emoji;
     Vibrator v;
     AudioManager am;
-    float SOUND_VOLUME = 100.0F;
     private boolean sym1;
     private boolean sym2;
+    private static final float SOUND_VOLUME = 500.0F;
+    private static final int VIBRATION_TIME = 40;
     private String THEME_KEY = "theme_key";
     private static final String SOUND_KEY = "sound_key";
     private static final String VIBRATION_KEY = "vibration_key";
@@ -171,9 +172,9 @@ public class MyInputMethodService extends InputMethodService implements Keyboard
     @RequiresApi(api = Build.VERSION_CODES.S)
     @Override
     public void onKey(int primaryCode, int[] keyCodes) {
-        if(primaryCode!=-5 && primaryCode!=32 && primaryCode != -70){//removing sound and vibration from backspace emoji backspace and space keys
+        if(primaryCode!=-5 && primaryCode != -70){//removing sound and vibration from backspace emoji backspace and space keys
             if(vibrate){
-                v.vibrate(30);
+                v.vibrate(VIBRATION_TIME);
 
             }
             if(sound){

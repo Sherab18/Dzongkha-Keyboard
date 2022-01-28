@@ -19,5 +19,7 @@
     <color name="skyblue">#00BCD4</color>
     <color name="bg">#F3F2F8</color>
     <color name="blue">#244A72</color>
+    <color name="skyblue1">#2D8ACD</color>
+    <color name="linkblue">#3B6795</color>
 
 </resources>

@@ -58,82 +58,82 @@ public class DzongkhaKeyboardView extends KeyboardView {
             if (key.label != null) {
 // drawing the superscript characters on english keyboard;
                 if (key.label.toString().equals("q") || key.label.toString().equals("Q") )
-                    canvas.drawText("+", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("+", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if ((key.codes[0] == 'w' || key.codes[0] == 'W'))
-                    canvas.drawText("x", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("x", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("e") || key.label.toString().equals("E") )
-                    canvas.drawText("÷", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("÷", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("r") || key.label.toString().equals("R") )
-                    canvas.drawText("=", key.x + (key.width*7)/10 , key.y + (key.height*3)/8 , paint);
+                    canvas.drawText("=", key.x + (key.width*7)/10 , key.y + (key.height*3)/10 , paint);
 
                 else if (key.label.toString().equals("t") || key.label.toString().equals("T") )
-                    canvas.drawText("/", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("/", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("y") || key.label.toString().equals("Y") )
-                    canvas.drawText("-", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("-", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("u") || key.label.toString().equals("U") )
-                    canvas.drawText("<", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("<", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("i") || key.label.toString().equals("I") )
-                    canvas.drawText(">", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText(">", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("o") || key.label.toString().equals("O") )
-                    canvas.drawText("[", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("[", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("p") || key.label.toString().equals("P") )
-                    canvas.drawText("]", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("]", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 if (key.label.toString().equals("a") || key.label.toString().equals("A") )
-                    canvas.drawText("!", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("!", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if ((key.codes[0] == 's' || key.codes[0] == 'S'))
-                    canvas.drawText("@", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("@", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("d") || key.label.toString().equals("D") )
-                    canvas.drawText("#", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("#", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("f") || key.label.toString().equals("F") )
-                    canvas.drawText("%", key.x + (key.width*7)/10 , key.y + (key.height*3)/8 , paint);
+                    canvas.drawText("%", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("g") || key.label.toString().equals("G") )
-                    canvas.drawText("^", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("^", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("h") || key.label.toString().equals("H") )
-                    canvas.drawText("&", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("&", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("j") || key.label.toString().equals("J") )
-                    canvas.drawText("*", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("*", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("k") || key.label.toString().equals("K") )
-                    canvas.drawText("(", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("(", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("L") || key.label.toString().equals("l") )
-                    canvas.drawText(")", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText(")", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("z") || key.label.toString().equals("Z") )
-                    canvas.drawText("_", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("_", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("x") || key.label.toString().equals("X") )
-                    canvas.drawText("'", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("'", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("c") || key.label.toString().equals("C") )
-                    canvas.drawText("\"", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("\"", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("v") || key.label.toString().equals("V") )
-                    canvas.drawText(":", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText(":", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("b") || key.label.toString().equals("B") )
-                    canvas.drawText(";", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText(";", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("n") || key.label.toString().equals("N") )
-                    canvas.drawText(",", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText(",", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
                 else if (key.label.toString().equals("m") || key.label.toString().equals("M") )
-                    canvas.drawText("?", key.x + (key.width*7)/10 , key.y + (key.height*3)/8, paint);
+                    canvas.drawText("?", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
 
 
 

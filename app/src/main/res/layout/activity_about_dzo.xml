@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".about_dzo"
-    android:background="@color/bg">
+    android:background="@color/bg"
+    >
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -35,22 +36,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:elevation="8dp"
+        android:elevation="4dp"
  />
+    <ImageView
+        android:id="@+id/imgshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actiontext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/actiontext"
+        app:srcCompat="@drawable/ic_share" />
+
+    <ImageView
+        android:id="@+id/imgrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actiontext"
+        app:layout_constraintEnd_toStartOf="@+id/imgshare"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/actiontext"
+        app:layout_constraintTop_toTopOf="@+id/actiontext"
+        app:srcCompat="@drawable/ic_rate" />
+
 
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/ddc_uchen"
-        android:text="ང་བཅས་ཀྱི་སྐོར།
-"
+        android:text="ལྡེ་སྒྲོམ་གྱི་སྐོར།"
         android:textAlignment="center"
         android:textColor="@color/blue"
-        android:textSize="19sp"
-        android:textStyle="bold"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,33 +81,36 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="349dp"
-        android:layout_height="141dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView3"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:fontFamily="@font/ddc_uchen"
+        android:fontFamily="@font/ddc_joyig"
         android:text="@string/aboutusdzo"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="17sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="334dp"
-        android:layout_height="93dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:fontFamily="@font/ddc_uchen"
-        android:lines="4"
+        android:fontFamily="@font/ddc_joyig"
         android:text="@string/aboutus1dzo"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="17sp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,26 +118,24 @@
 
     <TextView
         android:id="@+id/tv14"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView5"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
         android:fontFamily="@font/ddc_uchen"
         android:text="རིམ་ལུགས་བཟོ་མི།"
         android:textAlignment="center"
-
         android:textColor="@color/blue"
-        android:textSize="18sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="352dp"
-        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tv14"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -122,24 +146,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="5dp"
         app:layout_constraintTop_toBottomOf="@+id/tv14" />
 
+
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView15"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:fontFamily="@font/ddc_uchen"
-        android:text="@string/aboutus2_dzo"
+        android:fontFamily="@font/ddc_joyig"
+        android:onClick="onClick1"
+        android:text="༡) སྐལ་བཟང་ཤེས་རབ།"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        android:textColor="@color/linkblue"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ddc_joyig"
+        android:onClick="onClick2"
+        android:text="༢) མ་ནི་ཀུ་མར་གཇ་མིར། "
+        android:textAlignment="center"
+        android:textColor="@color/linkblue"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ddc_joyig"
+        android:onClick="onClick3"
+        android:text="༣) རིན་ཆེན་དབང་འདུས། "
+        android:textAlignment="center"
+        android:textColor="@color/linkblue"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ddc_joyig"
+        android:onClick="onClick4"
+        android:text="༤) ཡེ་ཤེས་རྒྱ་མཚོ། (ལམ་སྟོན་པ།)"
+        android:textAlignment="center"
+        android:textColor="@color/linkblue"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
         app:layout_constraintVertical_bias="0.0" />
 
 

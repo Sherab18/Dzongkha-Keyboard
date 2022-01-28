@@ -56,27 +56,25 @@
             android:id="@+id/theme_light"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/theme_light" />
+            android:src="@drawable/theme_lightdzo" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
             android:background="@color/darkorange"
-            android:fontFamily="@font/source_serif_pro"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:fontFamily="@font/ddc_joyig"
             android:text="དཔེ་གཞི་སྐྱ་བོ།"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/theme_dark_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#181818"
+        android:background="#000000"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +90,7 @@
             android:id="@+id/theme_dark"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/theme_dark"
+            android:src="@drawable/theme_darkdzo"
             />
 
         <TextView
@@ -100,13 +98,11 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
             android:background="@color/darkorange"
-            android:fontFamily="@font/source_serif_pro"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:fontFamily="@font/ddc_joyig"
             android:text="དཔེ་གཞི་གནགཔོ།"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
     </LinearLayout>
 
 

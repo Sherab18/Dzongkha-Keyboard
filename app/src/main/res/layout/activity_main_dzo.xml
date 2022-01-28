@@ -7,27 +7,28 @@
     tools:context=".MainActivity_dzo"
     android:background="@color/bg">
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/darkorange"
+        android:theme="@style/navButton_dzo"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/bottom_navigation"
-        android:background="@color/darkorange"
-        app:itemTextColor="@drawable/selector"
-        app:itemIconTint="@drawable/selector"
-        app:menu="@menu/button_menu_dzo"
-        app:itemIconSize="28dp"
-        android:theme="@style/navButton_dzo"/>
-
-
+        app:menu="@menu/button_menu_dzo" />
 
     <TextView
         android:id="@+id/actiontext"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@color/orange"
+        android:elevation="4dp"
         android:fontFamily="@font/ddc_uchen"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -35,10 +36,32 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:elevation="8dp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imgshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actiontext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/actiontext"
+        app:srcCompat="@drawable/ic_share" />
+
+    <ImageView
+        android:id="@+id/imgrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actiontext"
+        app:layout_constraintEnd_toStartOf="@+id/imgshare"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/actiontext"
+        app:layout_constraintTop_toTopOf="@+id/actiontext"
+        app:srcCompat="@drawable/ic_rate" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -69,8 +92,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="39dp"
-        android:layout_height="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/ddc_uchen"
         android:text="རྫོང་ཁ།"
         android:textColor="@color/blue"
@@ -88,11 +111,11 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/orange"
         android:drawableLeft="@drawable/ic_setting1"
-        android:fontFamily="@font/ddc_uchen"
+        android:fontFamily="@font/ddc_joyig"
         android:paddingLeft="10dp"
         android:text="རིམ་སྒྲིག།"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,12 +132,12 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/orange"
         android:drawableLeft="@drawable/ic_edit1"
-        android:fontFamily="@font/ddc_uchen"
+        android:fontFamily="@font/ddc_joyig"
         android:paddingLeft="10dp"
         android:text="རྫོང་ཁའི་ལྡེ་སྒྲོམ་གདམ་ཁ་རྐྱབ།
 "
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
@@ -130,12 +153,12 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/orange"
         android:drawableLeft="@drawable/ic_keyboard1"
-        android:fontFamily="@font/ddc_uchen"
+        android:fontFamily="@font/ddc_joyig"
         android:gravity="center"
         android:paddingLeft="10dp"
         android:text=" རྫོང་ཁའི་ལྡེ་སྒྲོབ་བཏུབ་བཟོ།"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
@@ -149,7 +172,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/ddc_uchen"
+        android:fontFamily="@font/ddc_joyig"
         android:text="@string/setup1"
         android:textAlignment="center"
         android:textColor="@color/blue"
@@ -158,6 +181,8 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setting" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
