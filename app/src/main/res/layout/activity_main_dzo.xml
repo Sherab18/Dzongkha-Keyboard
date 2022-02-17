@@ -156,7 +156,7 @@
         android:fontFamily="@font/ddc_joyig"
         android:gravity="center"
         android:paddingLeft="10dp"
-        android:text=" རྫོང་ཁའི་ལྡེ་སྒྲོབ་བཏུབ་བཟོ།"
+        android:text=" རྫོང་ཁའི་ལྡེ་སྒྲོམ་བཏུབ་བཟོ།"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="normal"

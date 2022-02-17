@@ -75,7 +75,7 @@
         android:backgroundTint="@color/bg"
         android:drawableLeft="@drawable/themee"
         android:fontFamily="@font/ddc_joyig"
-        android:text=" ལྡེ་སྒྲོབ་ཀྱི་དཔེ་གཞི།"
+        android:text=" ལྡེ་སྒྲོམ་ཀྱི་དཔེ་གཞི།"
         android:textAllCaps="false"
         android:textColor="@color/blue"
         android:textSize="17sp"

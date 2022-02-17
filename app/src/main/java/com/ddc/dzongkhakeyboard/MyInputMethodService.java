@@ -217,6 +217,7 @@ public class MyInputMethodService extends InputMethodService implements Keyboard
                             .showInputMethodPicker();
 
                     break;
+
                 case -23:
                     if(sharedPreferences.getBoolean(DEFAULT_KEYBOARD,false)){
                         Intent dialogIntent2 = new Intent(this, Setting_dzo.class);
@@ -378,17 +379,23 @@ public class MyInputMethodService extends InputMethodService implements Keyboard
                     break;
 
                 case -11:
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
 
                     if(dzo) {
-                        keyboard = english_keyboard_normal;
+                        keyboard = english_keyboard_shift;
                         keyboardView.setKeyboard(keyboard);
+                        shift = true;
                         dzo=false;
+                        editor.putBoolean(DEFAULT_KEYBOARD,false);
+                        editor.apply();
                         break;
 
                     }
                     else{
                         keyboard = dzongkha_keyboard_normal;
                         keyboardView.setKeyboard(keyboard);
+                        editor.putBoolean(DEFAULT_KEYBOARD,true);
+                        editor.apply();
                         dzo = true;
 
                     }

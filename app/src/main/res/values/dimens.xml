@@ -3,5 +3,6 @@
     <dimen name="canvasTextSize">12sp</dimen>
     <dimen name="key_width">7.7%p</dimen>
     <dimen name="keyTextSize">20sp</dimen>
+    <dimen name="canvasTextSized">14sp</dimen>
 
 </resources>

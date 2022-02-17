@@ -79,7 +79,7 @@ public class about_dzo extends AppCompatActivity implements
                 sharingIntent.setType("text/plain");
 
                 // Body of the content
-                String shareBody = "Dzongkha Keyboard Application Link here";
+                String shareBody = "https://play.google.com/store/apps/details?="+ BuildConfig.APPLICATION_ID+"\n\n";
 
                 // subject of the content. you can share anything
                 String shareSubject = "Android Based Dzongkha Keyboard";

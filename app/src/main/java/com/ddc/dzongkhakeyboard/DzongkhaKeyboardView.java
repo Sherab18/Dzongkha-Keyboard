@@ -37,6 +37,7 @@ public class DzongkhaKeyboardView extends KeyboardView {
     public void onDraw(Canvas canvas) {
 
         Paint paint = new Paint();
+        Paint paintd = new Paint();
 
         int theme = sharedPreferences.getInt("theme_key", 0);
 
@@ -47,8 +48,12 @@ public class DzongkhaKeyboardView extends KeyboardView {
 
         paint.setTextAlign(Paint.Align.CENTER);
         paint.setTextSize(getResources().getDimension(R.dimen.canvasTextSize));
-
         paint.setColor(getResources().getColor(R.color.popupKeyColor));
+
+        paintd.setTextAlign(Paint.Align.CENTER);
+        paintd.setTextSize(getResources().getDimension(R.dimen.canvasTextSized));
+        paintd.setColor(getResources().getColor(R.color.popupKeyColor));
+
         paint2.setColor(getResources().getColor(R.color.white200));
 
         
@@ -134,6 +139,10 @@ public class DzongkhaKeyboardView extends KeyboardView {
 
                 else if (key.label.toString().equals("m") || key.label.toString().equals("M") )
                     canvas.drawText("?", key.x + (key.width*7)/10 , key.y + (key.height*3)/10, paint);
+                else if (key.label.toString().equals(" ")  )
+                    canvas.drawText("English", key.x + (key.width)/2 , key.y + (key.height)*4/6, paintd);
+                else if (key.label.toString().equals("  ")  )
+                    canvas.drawText("རྫོང་ཁ།", key.x + (key.width)/2 , key.y + (key.height)*4/6, paintd);
 
 
 
